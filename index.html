@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auto Plus Atyrau — Профессиональный автосервис</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="Auto Plus Atyrau" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="logo-fallback">
+        <div class="logo-emblem">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14" stroke="#2563eb" stroke-width="1.5"/>
+            <path d="M8 16a8 8 0 0116 0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="3" fill="#2563eb"/>
+            <path d="M16 9v1.5M16 21.5V23M9 16H7.5M24.5 16H23" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <span class="logo-main">AUTO PLUS</span>
+          <span class="logo-sub">ATYRAU</span>
+        </div>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <a href="https://wa.me/77055007558" target="_blank" class="btn btn-nav">Связаться</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-media">
+    <img
+      src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1800&q=90&auto=format&fit=crop"
+      alt="Auto Plus Atyrau — Профессиональный автосервис"
+      class="hero-bg-img"
+    />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-line"></span>
+      <span>Атырау · 3 локации</span>
+    </div>
+
+    <h1 class="hero-title">
+      Профессиональный<br/>
+      <em>автосервис</em><br/>
+      в Атырау
+    </h1>
+
+    <p class="hero-desc">
+      Комплексное техническое обслуживание автомобилей. Замена масла и технических жидкостей, продажа оригинальных запчастей и аксессуаров. Работаем с любыми марками.
+    </p>
+
+    <div class="hero-actions">
+      <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Записаться на сервис
+      </a>
+      <a href="services.html" class="btn btn-ghost">
+        Наши услуги
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Точки обслуживания</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">10<small>+</small></span>
+        <span class="stat-label">Лет на рынке</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Оригинальные расходники</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- ═══ SERVICES PREVIEW ═══ -->
+<section class="section services-preview">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Что мы делаем</span>
+      <h2 class="section-title">Услуги автосервиса</h2>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card card-service" data-aos>
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=600&q=80&auto=format&fit=crop" alt="Замена масла" loading="lazy"/>
+          <div class="card-img-badge" style="background:#2563eb;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Замена масла и жидкостей</h3>
+          <p>Моторное масло, антифриз, тормозная и трансмиссионная жидкости. Полный контроль технических жидкостей вашего автомобиля.</p>
+          <a href="services.html" class="card-link">Подробнее <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card card-service" data-aos>
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&q=80&auto=format&fit=crop" alt="Техобслуживание" loading="lazy"/>
+          <div class="card-img-badge" style="background:#0891b2;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Техническое обслуживание</h3>
+          <p>Плановое ТО согласно регламенту производителя. Диагностика и проверка всех ключевых систем автомобиля.</p>
+          <a href="services.html" class="card-link">Подробнее <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+      <div class="card card-service" data-aos>
+        <div class="card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=600&q=80&auto=format&fit=crop" alt="Запчасти и аксессуары" loading="lazy"/>
+          <div class="card-img-badge" style="background:#16a34a;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Запчасти и аксессуары</h3>
+          <p>Широкий ассортимент оригинальных запчастей, фильтров, расходников и автоаксессуаров для всех марок автомобилей.</p>
+          <a href="services.html" class="card-link">Подробнее <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PHOTO STRIP ═══ -->
+<div class="photo-strip">
+  <div class="strip-track">
+    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1622186477895-f2af6a0f5a97?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <!-- duplicate for loop -->
+    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1622186477895-f2af6a0f5a97?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+    <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&q=75&auto=format&fit=crop" alt="" loading="lazy"/>
+  </div>
+</div>
+
+<!-- ═══ WHY US ═══ -->
+<section class="section why-us">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-visual" data-aos>
+        <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=700&q=85&auto=format&fit=crop" alt="Наш сервис" class="why-photo" loading="lazy"/>
+        <div class="why-badge-float">
+          <div class="wbf-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          </div>
+          <div>
+            <strong>Гарантия качества</strong>
+            <span>На все виды работ</span>
+          </div>
+        </div>
+      </div>
+      <div class="why-text">
+        <span class="section-tag">Почему выбирают нас</span>
+        <h2 class="section-title">Надёжный сервис —<br/>не слова, а стандарт</h2>
+        <ul class="why-list">
+          <li>
+            <div class="why-icon-svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div><strong>Работаем по регламенту</strong><p>Каждое ТО выполняется строго по стандартам производителя — без отклонений</p></div>
+          </li>
+          <li>
+            <div class="why-icon-svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div><strong>Квалифицированные мастера</strong><p>Специалисты с профессиональной подготовкой, опыт работы со всеми марками авто</p></div>
+          </li>
+          <li>
+            <div class="why-icon-svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </div>
+            <div><strong>Только оригинальные материалы</strong><p>Сертифицированные масла, фильтры и жидкости от ведущих производителей</p></div>
+          </li>
+          <li>
+            <div class="why-icon-svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div><strong>Точные сроки выполнения</strong><p>Соблюдаем договорённости — ваш автомобиль будет готов в оговорённое время</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS BAND ═══ -->
+<div class="stats-band">
+  <div class="container stats-band-inner">
+    <div class="sband-item" data-aos>
+      <div class="sband-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <span class="sband-num">3</span>
+      <span class="sband-label">Точки в Атырау</span>
+    </div>
+    <div class="sband-divider"></div>
+    <div class="sband-item" data-aos>
+      <div class="sband-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <span class="sband-num">10<small>+</small></span>
+      <span class="sband-label">Лет на рынке</span>
+    </div>
+    <div class="sband-divider"></div>
+    <div class="sband-item" data-aos>
+      <div class="sband-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+      </div>
+      <span class="sband-num">100%</span>
+      <span class="sband-label">Оригинальные материалы</span>
+    </div>
+    <div class="sband-divider"></div>
+    <div class="sband-item" data-aos>
+      <div class="sband-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <span class="sband-num">500<small>+</small></span>
+      <span class="sband-label">Клиентов в месяц</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PARTNERS ═══ -->
+<section class="section partners-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Наши партнёры</span>
+      <h2 class="section-title">Компании, которые нам доверяют</h2>
+      <p class="section-sub">Мы обслуживаем корпоративные автопарки ведущих предприятий Атырау и региона</p>
+    </div>
+    <div class="partners-grid">
+      <div class="partner-card" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Нефтяные компании</h4>
+          <p>Обслуживание служебных автопарков нефтяного сектора региона</p>
+        </div>
+      </div>
+      <div class="partner-card" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8zM5.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM18.5 21a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Транспортные компании</h4>
+          <p>Регулярное ТО грузовых и пассажирских автопарков Атырау</p>
+        </div>
+      </div>
+      <div class="partner-card" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Государственные структуры</h4>
+          <p>Обслуживание государственных и муниципальных автопарков</p>
+        </div>
+      </div>
+      <div class="partner-card" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Медицинские учреждения</h4>
+          <p>Своевременное ТО автопарков скорой помощи и клиник</p>
+        </div>
+      </div>
+      <div class="partner-card" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Строительные компании</h4>
+          <p>Обслуживание техники и автомобилей строительного сектора</p>
+        </div>
+      </div>
+      <div class="partner-card partner-card-cta" data-aos>
+        <div class="partner-logo-wrap">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        </div>
+        <div class="partner-info">
+          <h4>Стать партнёром</h4>
+          <p>Обсудим условия корпоративного обслуживания вашего автопарка</p>
+          <a href="https://wa.me/77055007558" target="_blank" class="card-link" style="margin-top:0.75rem;display:inline-flex;">
+            Связаться <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Company logos scroll -->
+    <div class="brands-strip">
+      <p class="brands-title">Компании, с которыми мы работаем</p>
+      <div class="brands-track">
+        <!-- KazMunayGas -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/KazMunayGas_logo.svg/320px-KazMunayGas_logo.svg.png" alt="KazMunayGas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">KazMunayGas</span>
+        </div>
+        <!-- Chevron -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Chevron_Logo.svg/320px-Chevron_Logo.svg.png" alt="Chevron" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Chevron</span>
+        </div>
+        <!-- Shell -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Shell_logo.svg/240px-Shell_logo.svg.png" alt="Shell" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Shell</span>
+        </div>
+        <!-- Total Energies -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TotalEnergies_logo.svg/320px-TotalEnergies_logo.svg.png" alt="TotalEnergies" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">TotalEnergies</span>
+        </div>
+        <!-- Castrol -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Castrol_logo.svg/320px-Castrol_logo.svg.png" alt="Castrol" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Castrol</span>
+        </div>
+        <!-- Mobil -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mobil_logo.svg/320px-Mobil_logo.svg.png" alt="Mobil 1" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Mobil 1</span>
+        </div>
+        <!-- Liqui Moly -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Liqui_Moly_logo.svg/320px-Liqui_Moly_logo.svg.png" alt="Liqui Moly" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Liqui Moly</span>
+        </div>
+        <!-- Bosch -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bosch-logo.svg/320px-Bosch-logo.svg.png" alt="Bosch" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;letter-spacing:0.06em;color:var(--text-muted);">Bosch</span>
+        </div>
+        <!-- duplicate set for seamless loop -->
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/KazMunayGas_logo.svg/320px-KazMunayGas_logo.svg.png" alt="KazMunayGas" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">KazMunayGas</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Chevron_Logo.svg/320px-Chevron_Logo.svg.png" alt="Chevron" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Chevron</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Shell_logo.svg/240px-Shell_logo.svg.png" alt="Shell" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Shell</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/TotalEnergies_logo.svg/320px-TotalEnergies_logo.svg.png" alt="TotalEnergies" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">TotalEnergies</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Castrol_logo.svg/320px-Castrol_logo.svg.png" alt="Castrol" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Castrol</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mobil_logo.svg/320px-Mobil_logo.svg.png" alt="Mobil 1" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Mobil 1</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Liqui_Moly_logo.svg/320px-Liqui_Moly_logo.svg.png" alt="Liqui Moly" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Liqui Moly</span>
+        </div>
+        <div class="company-logo-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bosch-logo.svg/320px-Bosch-logo.svg.png" alt="Bosch" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <span style="display:none;font-family:var(--font-mono);font-size:1rem;">Bosch</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TEAM ═══ -->
+<section class="section team-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Наша команда</span>
+      <h2 class="section-title">Люди, которым вы доверяете</h2>
+      <p class="section-sub">Профессионалы с многолетним опытом в автомобильной сфере</p>
+    </div>
+    <div class="team-grid">
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&q=80&auto=format&fit=crop&face=true" alt="Руководитель" loading="lazy"/>
+          <div class="team-photo-overlay"></div>
+        </div>
+        <div class="team-body">
+          <h4>Руководитель сети</h4>
+          <span class="team-role">Auto Plus Atyrau</span>
+          <p>Основатель и руководитель сети. Более 15 лет в автомобильной отрасли Атырау.</p>
+          <a href="https://wa.me/77055007558" target="_blank" class="team-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Написать
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80&auto=format&fit=crop&face=true" alt="Старший механик Геолог" loading="lazy"/>
+          <div class="team-photo-overlay"></div>
+        </div>
+        <div class="team-body">
+          <h4>Старший механик</h4>
+          <span class="team-role">Точка Геолог</span>
+          <p>Специалист по диагностике и техническому обслуживанию. Опыт работы — более 10 лет.</p>
+          <a href="https://wa.me/77011189228" target="_blank" class="team-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Написать
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80&auto=format&fit=crop&face=true" alt="Механик Құрсай" loading="lazy"/>
+          <div class="team-photo-overlay"></div>
+        </div>
+        <div class="team-body">
+          <h4>Старший механик</h4>
+          <span class="team-role">Точка Құрсай</span>
+          <p>Эксперт по системам охлаждения и трансмиссии. Работает в компании с первых дней.</p>
+          <a href="https://wa.me/77754526732" target="_blank" class="team-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Написать
+          </a>
+        </div>
+      </div>
+
+      <div class="team-card" data-aos>
+        <div class="team-photo-wrap">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80&auto=format&fit=crop&face=true" alt="Менеджер магазина" loading="lazy"/>
+          <div class="team-photo-overlay"></div>
+        </div>
+        <div class="team-body">
+          <h4>Менеджер магазина</h4>
+          <span class="team-role">Отдел запчастей</span>
+          <p>Подбор запчастей для любых марок автомобилей. Поможет найти нужный товар быстро.</p>
+          <a href="https://wa.me/77055007558" target="_blank" class="team-wa">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Написать
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MAP ═══ -->
+<section class="section map-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Адреса</span>
+      <h2 class="section-title">Три точки в Атырау</h2>
+      <p class="section-sub">Выберите ближайший к вам сервисный центр</p>
+    </div>
+  </div>
+
+  <div class="map-wrapper">
+    <!-- Interactive 2GIS embed -->
+    <div class="map-iframe-wrap">
+      <!-- Google Maps — Atyrau city centre, zoom 13 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46071.12345678!2d51.8668!3d47.1164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41aa7a0000000001%3A0x1!2z0JDRgtGL0YDQsNGD!5e0!3m2!1sru!2skz!4v1700000000000!5m2!1sru!2skz"
+        width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Auto Plus Atyrau — карта">
+      </iframe>
+    </div>
+
+    <!-- Points sidebar -->
+    <div class="map-points">
+      <div class="map-point" data-aos>
+        <div class="mp-num" style="background:var(--blue);">01</div>
+        <div class="mp-info">
+          <h4>Геолог</h4>
+          <p>ул. Астана, 30а (р-н Мирас)</p>
+          <div class="mp-tags">
+            <span class="tag-chip">Магазин</span>
+            <span class="tag-chip">Сервис</span>
+          </div>
+          <div class="mp-phones">
+            <a href="https://wa.me/77055007558" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 705 500-75-58 (Магазин)
+            </a>
+            <a href="https://wa.me/77011189228" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 701 118-92-28 (Сервис)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-point" data-aos>
+        <div class="mp-num" style="background:var(--red);">02</div>
+        <div class="mp-info">
+          <h4>Ирсай / Құрсай</h4>
+          <p>ул. Смагулова, 2 (р-н Құрсай)</p>
+          <div class="mp-tags">
+            <span class="tag-chip">Магазин</span>
+            <span class="tag-chip">Сервис</span>
+          </div>
+          <div class="mp-phones">
+            <a href="https://wa.me/77785862484" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 778 586-24-84 (Магазин)
+            </a>
+            <a href="https://wa.me/77754526732" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 775 452-67-32 (Сервис)
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-point" data-aos>
+        <div class="mp-num" style="background:#059669;">03</div>
+        <div class="mp-info">
+          <h4>Трасса Доссор</h4>
+          <p>Трасса Атырау–Доссор, 15 км</p>
+          <div class="mp-tags">
+            <span class="tag-chip">Сервис</span>
+          </div>
+          <div class="mp-phones">
+            <a href="https://wa.me/77055007558" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 705 500-75-58
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-sidebar-btns">
+        <a href="https://maps.google.com/?q=Атырау+Auto+Plus" target="_blank" class="btn btn-outline map-2gis-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Google Maps
+        </a>
+        <a href="https://2gis.kz/atyrau/geo/70000001069357056" target="_blank" class="btn btn-outline map-2gis-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          Открыть в 2GIS
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA BANNER ═══ -->
+<section class="cta-banner">
+  <div class="cta-bg-img">
+    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1400&q=80&auto=format&fit=crop" alt="" loading="lazy"/>
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="container cta-inner">
+    <div>
+      <h2>Запишитесь на техническое обслуживание</h2>
+      <p>Напишите в WhatsApp — согласуем удобное время в течение нескольких минут</p>
+    </div>
+    <a href="https://wa.me/77055007558" target="_blank" class="btn btn-white">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Записаться через WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Auto Plus Atyrau" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+        <div class="footer-logo-fallback">
+          <div class="logo-emblem footer-emblem">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/><path d="M8 16a8 8 0 0116 0" stroke="rgba(255,255,255,0.4)" stroke-width="1.8" stroke-linecap="round"/><circle cx="16" cy="16" r="3" fill="white"/></svg>
+          </div>
+          <div><span class="logo-main">AUTO PLUS</span><span class="logo-sub" style="color:rgba(255,255,255,0.35)">ATYRAU</span></div>
+        </div>
+      </div>
+      <p>Профессиональный автосервис<br/>и магазин автозапчастей в Атырау</p>
+    </div>
+    <div class="footer-links">
+      <h4>Навигация</h4>
+      <a href="index.html">Главная</a>
+      <a href="services.html">Услуги</a>
+      <a href="about.html">О нас</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+    <div class="footer-contacts">
+      <h4>Контакты</h4>
+      <a href="https://wa.me/77055007558" target="_blank">Магазин Геолог</a>
+      <a href="https://wa.me/77785862484" target="_blank">Магазин Ирсай</a>
+      <a href="https://wa.me/77011189228" target="_blank">Сервис Геолог</a>
+      <a href="https://wa.me/77754526732" target="_blank">Сервис Құрсай</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Auto Plus Atyrau. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/77055007558" target="_blank" class="wa-float" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+  <span class="wa-tooltip">Написать нам</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
