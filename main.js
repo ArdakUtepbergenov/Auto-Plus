@@ -2,6 +2,32 @@
    AUTO PLUS ATYRAU — MAIN JS v2
    ============================================= */
 
+/* ---------- Team filter tabs ---------- */
+const tabs    = document.querySelectorAll('.team-tab');
+const cards   = document.querySelectorAll('#teamGrid .team-card');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const filter = tab.dataset.filter;
+    cards.forEach(card => {
+      const loc = card.dataset.loc;
+      card.classList.toggle('hidden', filter !== 'all' && loc !== filter);
+    });
+  });
+});
+
+/* ---------- Auto-duplicate brands track for seamless loop ---------- */
+const track = document.getElementById('brandsTrack');
+if (track) {
+  const items = Array.from(track.children);
+  items.forEach(item => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+}
+
 /* ---------- Navbar scroll effect ---------- */
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
