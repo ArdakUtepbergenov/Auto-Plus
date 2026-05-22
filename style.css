@@ -652,6 +652,12 @@ h2 { font-family: var(--font-serif); font-weight: 600; line-height: 1.12; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .map-wrapper { grid-template-columns: 1fr; }
 }
+
+@media (max-width: 768px) {
+  .team-photo-wrap { height: 260px; }
+  .team-photo-wrap--tall { height: 320px; }
+}
+
 @media (max-width: 480px) {
   .hero-title { font-size: 2.8rem; }
   .hero-actions { flex-direction: column; }
