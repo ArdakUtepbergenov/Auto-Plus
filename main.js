@@ -7,26 +7,7 @@ const tabs    = document.querySelectorAll('.team-tab');
 const cards   = document.querySelectorAll('#teamGrid .team-card');
 const modalBtns = document.querySelectorAll('.services-open-btn');
 
-modalBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const modal = document.getElementById(btn.dataset.modal);
-    modal.classList.add('active');
-  });
-});
 
-document.querySelectorAll('.services-close').forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.closest('.services-modal').classList.remove('active');
-  });
-});
-
-document.querySelectorAll('.services-modal').forEach(modal => {
-  modal.addEventListener('click', e => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-    }
-  });
-});
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     tabs.forEach(t => t.classList.remove('active'));
@@ -176,4 +157,25 @@ document.querySelectorAll('img[loading="lazy"]').forEach(img => {
   } else {
     img.addEventListener('load', () => img.style.opacity = '1');
   }
+});
+
+modalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modal = document.getElementById(btn.dataset.modal);
+    modal.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.services-close').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.services-modal').classList.remove('active');
+  });
+});
+
+document.querySelectorAll('.services-modal').forEach(modal => {
+  modal.addEventListener('click', e => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
 });
