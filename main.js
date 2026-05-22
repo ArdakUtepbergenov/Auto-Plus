@@ -158,4 +158,12 @@ document.querySelectorAll('img[loading="lazy"]').forEach(img => {
     img.addEventListener('load', () => img.style.opacity = '1');
   }
 });
-
+/* ---------- Services tabs ---------- */
+document.querySelectorAll('.asvc-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.asvc-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.asvc-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelector(`.asvc-panel[data-cat="${tab.dataset.cat}"]`).classList.add('active');
+  });
+});
