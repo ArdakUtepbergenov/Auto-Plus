@@ -122,15 +122,7 @@
         <div class="card-body">
           <h3>Замена масла и жидкостей</h3>
           <p>Моторное масло, антифриз, тормозная и трансмиссионная жидкости. Полный контроль технических жидкостей вашего автомобиля.</p>
-<div class="service-preview">
-  <span>Замена масла двигателя</span>
-  <span>АКПП / DSG / вариатор</span>
-  <span>Диагностика и ремонт</span>
-</div>
-
-<button class="services-open-btn" data-modal="oilServices">
-  Смотреть все услуги
-</button>
+          <a href="services.html" class="card-link">Подробнее <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
           
         </div>
       </div>
@@ -175,88 +167,135 @@
       <h2 class="section-title">Все виды работ</h2>
       <p class="section-sub">Выполняем полный спектр технического обслуживания любых марок автомобилей</p>
     </div>
-    <div class="all-services-grid">
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-        </div>
-        <h4>Замена масел</h4>
-        <ul>
-          <li>Замена масла двигателя</li>
-          <li>Замена масла АКПП</li>
-          <li>Замена масла в вариаторе</li>
-          <li>Замена масла ДСГ</li>
-          <li>Замена масла МКПП</li>
-          <li>Замена масла в мостах, раздатке</li>
-          <li>Замена всех жидкостей</li>
-        </ul>
-      </div>
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-        </div>
-        <h4>Двигатель и ГРМ</h4>
-        <ul>
-          <li>Замена фильтров</li>
-          <li>Замена коренного сальника</li>
-          <li>Капитальный ремонт двигателя</li>
-          <li>Замена ремня ГРМ</li>
-          <li>Снятие/установка двигателя</li>
-          <li>Замена приводного ремня</li>
-        </ul>
-      </div>
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        </div>
-        <h4>Диагностика</h4>
-        <ul>
-          <li>Компьютерная диагностика</li>
-          <li>Адаптация АКПП</li>
-          <li>Диагностика ходовой части</li>
-          <li>Работа автоэлектрика</li>
-        </ul>
-      </div>
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
-        </div>
-        <h4>Тормоза и ходовая</h4>
-        <ul>
-          <li>Замена тормозной жидкости</li>
-          <li>Замена тормозных колодок</li>
-          <li>Ремонт ходовой части</li>
-          <li>Развал-схождение</li>
-        </ul>
-      </div>
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><path d="M12 2L6 12a6 6 0 1012 0L12 2z"/></svg>
-        </div>
-        <h4>Охлаждение и топливо</h4>
-        <ul>
-          <li>Промывка радиатора печки</li>
-          <li>Промывка форсунок</li>
-          <li>Заправка автокондиционера</li>
-        </ul>
-      </div>
-      <div class="asvc-card" data-aos>
-        <div class="asvc-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-        </div>
-        <h4>Дополнительно</h4>
-        <ul>
-          <li>Замена свечей зажигания</li>
-          <li>Шиномонтаж</li>
-          <li>Автомойка</li>
-        </ul>
-      </div>
+
+    <div class="asvc-tabs">
+      <button class="asvc-tab active" data-cat="oils">Замена масел</button>
+      <button class="asvc-tab" data-cat="engine">Двигатель</button>
+      <button class="asvc-tab" data-cat="diag">Диагностика</button>
+      <button class="asvc-tab" data-cat="brakes">Тормоза и ходовая</button>
+      <button class="asvc-tab" data-cat="cooling">Охлаждение</button>
+      <button class="asvc-tab" data-cat="extra">Дополнительно</button>
     </div>
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        Записаться на сервис
-      </a>
+
+    <div class="asvc-panels">
+
+      <div class="asvc-panel active" data-cat="oils">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=700&q=85&auto=format&fit=crop" alt="Замена масел" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Замена масел</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Замена всех видов масел с использованием только оригинальных материалов, подобранных под спецификацию вашего автомобиля.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла двигателя</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла АКПП</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла в вариаторе</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла ДСГ</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла МКПП</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена масла в мостах, раздатке</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена всех жидкостей</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
+      <div class="asvc-panel" data-cat="engine">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=700&q=85&auto=format&fit=crop" alt="Двигатель" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Двигатель и ГРМ</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Профессиональный ремонт и обслуживание двигателя. Работаем строго по регламенту производителя.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена фильтров</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена коренного сальника</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Капитальный ремонт двигателя</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена ремня ГРМ</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Снятие/установка двигателя</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена приводного ремня</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
+      <div class="asvc-panel" data-cat="diag">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=700&q=85&auto=format&fit=crop" alt="Диагностика" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Диагностика</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Современное диагностическое оборудование позволяет выявить любые неисправности быстро и точно.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Компьютерная диагностика</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Адаптация АКПП</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Диагностика ходовой части</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Работа автоэлектрика</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
+      <div class="asvc-panel" data-cat="brakes">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=700&q=85&auto=format&fit=crop" alt="Тормоза" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Тормоза и ходовая</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Безопасность на дороге начинается с исправных тормозов и ходовой части. Проверим и отремонтируем.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена тормозной жидкости</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена тормозных колодок</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Ремонт ходовой части</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Развал-схождение</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
+      <div class="asvc-panel" data-cat="cooling">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=700&q=85&auto=format&fit=crop" alt="Охлаждение" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Охлаждение и топливо</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Обслуживание системы охлаждения, топливной системы и кондиционирования.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Промывка радиатора печки</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Промывка форсунок</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Заправка автокондиционера</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
+      <div class="asvc-panel" data-cat="extra">
+        <div class="asvc-panel-img">
+          <img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24?w=700&q=85&auto=format&fit=crop" alt="Дополнительно" loading="lazy"/>
+          <div class="asvc-panel-img-overlay">
+            <span class="asvc-panel-label">Дополнительно</span>
+          </div>
+        </div>
+        <div class="asvc-panel-list">
+          <p class="asvc-panel-desc">Дополнительные услуги для полного ухода за вашим автомобилем.</p>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Замена свечей зажигания</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Шиномонтаж</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>Автомойка</li>
+          </ul>
+          <a href="https://wa.me/77055007558" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Записаться</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
