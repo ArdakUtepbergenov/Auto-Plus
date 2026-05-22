@@ -740,6 +740,54 @@ h2 { font-family: var(--font-serif); font-weight: 600; line-height: 1.12; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .map-wrapper { grid-template-columns: 1fr; }
 }
+@media (max-width: 768px) {
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .team-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .team-photo-wrap {
+    width: 110px;
+    min-width: 110px;
+    height: 110px;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .team-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-body h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .team-position {
+    font-size: 0.92rem;
+  }
+
+  /* Основатель отдельно */
+  .team-card-founder {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-card-founder .team-photo-wrap--tall {
+    width: 100%;
+    height: 320px;
+  }
+}
 @media (max-width: 480px) {
   .hero-title { font-size: 2.8rem; }
   .hero-actions { flex-direction: column; }
