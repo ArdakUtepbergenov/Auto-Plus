@@ -103,8 +103,8 @@ p { line-height: 1.72; }
 .nav-links a.active { color: var(--blue); background: var(--blue-xlight); font-weight: 600; }
 
 /* Burger */
-.burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 0.5rem; margin-left: auto; }
-.burger span { display: block; width: 22px; height: 1.5px; background: var(--text); border-radius: 2px; transition: var(--tr); }
+.burger { display: none; flex-direction: column; gap: 5px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 9px; cursor: pointer; padding: 0.55rem 0.6rem; margin-left: auto; }
+.burger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--tr); }
 
 /* ── BUTTONS ── */
 .btn {
@@ -823,7 +823,8 @@ p { line-height: 1.72; }
 @media (max-width: 1024px) {
   .why-inner { gap: 3rem; }
   .about-grid { gap: 3rem; }
-  .service-detail-card { grid-template-columns: 1fr; }
+  .service-detail-card,
+  .service-detail-card.reverse { grid-template-columns: 1fr; }
   .service-detail-card.reverse .sdc-media,
   .service-detail-card.reverse .sdc-content { order: unset; }
   .sdc-media { min-height: 280px; }
@@ -835,6 +836,7 @@ p { line-height: 1.72; }
   .why-badge-float { right: 0; bottom: -1rem; }
   .about-grid { grid-template-columns: 1fr; }
   .about-img-stack { display: none; }
+  .about-visual { display: none; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .partners-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
