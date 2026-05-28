@@ -3,20 +3,39 @@
    ============================================= */
 
 /* ---------- Team filter tabs ---------- */
-const tabs    = document.querySelectorAll('.team-tab');
-const cards   = document.querySelectorAll('#teamGrid .team-card');
+const tabs      = document.querySelectorAll('.team-tab');
+const cards     = document.querySelectorAll('#teamGrid .team-card');
+const teamGrid  = document.getElementById('teamGrid');
+const teamEmpty = document.getElementById('teamEmpty');
 const modalBtns = document.querySelectorAll('.services-open-btn');
 
+function applyTeamFilter(filter) {
+  cards.forEach(card => {
+    const loc = card.dataset.loc;
+    card.classList.toggle('hidden', filter !== 'all' && loc !== filter);
+  });
+
+  const visibleCount = [...cards].filter(c =>
+    !c.classList.contains('hidden') &&
+    !c.classList.contains('team-card-founder')
+  ).length;
+
+  if (teamGrid) {
+    teamGrid.classList.remove('team-grid--solo', 'team-grid--duo');
+    if (visibleCount === 1) teamGrid.classList.add('team-grid--solo');
+    else if (visibleCount === 2) teamGrid.classList.add('team-grid--duo');
+  }
+
+  if (teamEmpty) {
+    teamEmpty.style.display = visibleCount === 0 ? 'flex' : 'none';
+  }
+}
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     tabs.forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
-    const filter = tab.dataset.filter;
-    cards.forEach(card => {
-      const loc = card.dataset.loc;
-      card.classList.toggle('hidden', filter !== 'all' && loc !== filter);
-    });
+    applyTeamFilter(tab.dataset.filter);
   });
 });
 
