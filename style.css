@@ -80,8 +80,10 @@ p { line-height: 1.72; }
 
 /* Logo */
 .logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-.logo-img { height: 46px; width: auto; object-fit: contain; }
-.logo-fallback { display: flex; align-items: center; gap: 0.75rem; }
+.logo-stack { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.logo-img { height: 28px; width: auto; object-fit: contain; display: block; }
+.logo-city { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--text-muted); line-height: 1; }
+.logo-fallback { display: none; align-items: center; gap: 0.75rem; }
 .logo-emblem {
   width: 40px; height: 40px; background: var(--blue-xlight);
   border-radius: 10px; display: flex; align-items: center; justify-content: center;
@@ -856,7 +858,8 @@ p { line-height: 1.72; }
   .full-photo-section { height: 300px; }
   .team-grid { grid-template-columns: repeat(2, 1fr); }
   .map-wrapper { grid-template-columns: 1fr; }
-  .map-points { max-height: 480px; }
+  .map-iframe-wrap, .map-iframe-wrap > div, .map-iframe-wrap iframe { min-height: 380px; }
+  .map-points { max-height: none; overflow-y: visible; }
 }
 
 @media (max-width: 768px) {
