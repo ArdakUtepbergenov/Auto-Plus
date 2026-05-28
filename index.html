@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
 </head>
 <body>
 
@@ -17,14 +18,6 @@
     <a href="index.html" class="logo">
       <img src="logo.png" alt="Auto Plus Atyrau" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
       <div class="logo-fallback">
-        <div class="logo-emblem">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <circle cx="16" cy="16" r="14" stroke="#2563eb" stroke-width="1.5"/>
-            <path d="M8 16a8 8 0 0116 0" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"/>
-            <circle cx="16" cy="16" r="3" fill="#2563eb"/>
-            <path d="M16 9v1.5M16 21.5V23M9 16H7.5M24.5 16H23" stroke="#2563eb" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
         <div>
           <span class="logo-main">AUTO PLUS</span>
           <span class="logo-sub">ATYRAU</span>
@@ -56,7 +49,7 @@
   <div class="container hero-content">
     <div class="hero-eyebrow">
       <span class="hero-eyebrow-line"></span>
-      <span>Атырау · 3 локации</span>
+      <span>Атырау · 5 филиалов</span>
     </div>
 
     <h1 class="hero-title">
@@ -248,7 +241,7 @@
 
       <div class="asvc-panel" data-cat="brakes">
         <div class="asvc-panel-img">
-          <img src="https://images.unsplash.com/photo-1580983559367-0dc2f8934365?w=700&q=85&auto=format&fit=crop" alt="Тормоза" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=400&q=75&auto=format&fit=crop" alt="Тормоза" loading="lazy"/>
           <div class="asvc-panel-img-overlay">
             <span class="asvc-panel-label">Тормоза и ходовая</span>
           </div>
@@ -267,7 +260,7 @@
 
       <div class="asvc-panel" data-cat="cooling">
         <div class="asvc-panel-img">
-          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=700&q=85&auto=format&fit=crop" alt="Охлаждение" loading="lazy"/>
+          <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&q=75&auto=format&fit=crop" alt="Охлаждение" loading="lazy"/>
           <div class="asvc-panel-img-overlay">
             <span class="asvc-panel-label">Охлаждение и топливо</span>
           </div>
@@ -654,9 +647,9 @@
     <!-- Team filter tabs -->
     <div class="team-tabs">
       <button class="team-tab active" data-filter="all">Все</button>
-      <button class="team-tab" data-filter="bereке">ПЗМ Береке</button>
-      <button class="team-tab" data-filter="kursay">Құрсай ПЗМ</button>
-      <button class="team-tab" data-filter="geolog">Геолог</button>
+      <button class="team-tab" data-filter="miras">Автоаптека Мирас</button>
+      <button class="team-tab" data-filter="kursay">Автоаптека Курсай</button>
+      <button class="team-tab" data-filter="geolog">Автоаптека Геолог</button>
       <button class="team-tab" data-filter="office">Офис AUTO+</button>
     </div>
 
@@ -676,7 +669,7 @@
 </div>
 
       <!-- 1 -->
-      <div class="team-card" data-aos data-loc="bereке">
+      <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/salamat.jpeg" alt="Намазгалиев Саламат" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Намазгалиев+Саламат&size=400&background=dbeafe&color=2563eb&bold=true&font-size=0.35'"/>
@@ -684,7 +677,7 @@
         </div>
         <div class="team-body">
           <h4>Намазгалиев Саламат</h4>
-          <span class="team-role">ПЗМ (мкр Береке)</span>
+          <span class="team-role">Автоаптека Мирас</span>
           <p class="team-position">Старший менеджер</p>
         </div>
       </div>
@@ -698,13 +691,13 @@
         </div>
         <div class="team-body">
           <h4>Сайлауулы Айсултан</h4>
-          <span class="team-role">Құрсай ПЗМ</span>
+          <span class="team-role">Автоаптека Курсай</span>
           <p class="team-position">Старший менеджер</p>
         </div>
       </div>
 
       <!-- 3 -->
-      <div class="team-card" data-aos data-loc="bereке">
+      <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/sagydat.jpeg" alt="Гинятов Сагыдат" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Гинятов+Сагыдат&size=400&background=dbeafe&color=2563eb&bold=true&font-size=0.35'"/>
@@ -712,13 +705,13 @@
         </div>
         <div class="team-body">
           <h4>Гинятов Сагыдат</h4>
-          <span class="team-role">ПЗМ (мкр Береке)</span>
+          <span class="team-role">Автоаптека Мирас</span>
           <p class="team-position">Старший менеджер</p>
         </div>
       </div>
 
       <!-- 4 -->
-      <div class="team-card" data-aos data-loc="bereке">
+      <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/mladdarkhan.jpeg" alt="Тлеугалиев Дархан" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Тлеугалиев+Дархан&size=400&background=fee2e2&color=dc2626&bold=true&font-size=0.35'"/>
@@ -726,13 +719,13 @@
         </div>
         <div class="team-body">
           <h4>Тлеугалиев Дархан</h4>
-          <span class="team-role" style="background:#fee2e2;color:#dc2626;">ПЗМ (мкр Береке)</span>
+          <span class="team-role" style="background:#fee2e2;color:#dc2626;">Автоаптека Мирас</span>
           <p class="team-position">Старший мастер</p>
         </div>
       </div>
 
       <!-- 5 -->
-      <!-- <div class="team-card" data-aos data-loc="bereке">
+      <!-- <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/isa.jpeg" alt="Сатыбалдиев Иса" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Сатыбалдиев+Иса&size=400&background=dbeafe&color=2563eb&bold=true&font-size=0.35'"/>
@@ -740,13 +733,13 @@
         </div>
         <div class="team-body">
           <h4>Сатыбалдиев Иса</h4>
-          <span class="team-role">ПЗМ (мкр Береке)</span>
+          <span class="team-role">Автоаптека Мирас</span>
           <p class="team-position">Мастер</p>
         </div>
       </div> -->
 
       <!-- 6 -->
-      <div class="team-card" data-aos data-loc="bereке">
+      <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/stardarkhan.jpeg" alt="Рысбаев Дархан" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Рысбаев+Дархан&size=400&background=dbeafe&color=2563eb&bold=true&font-size=0.35'"/>
@@ -754,13 +747,13 @@
         </div>
         <div class="team-body">
           <h4>Рысбаев Дархан</h4>
-          <span class="team-role">ПЗМ (мкр Береке)</span>
+          <span class="team-role">Автоаптека Мирас</span>
           <p class="team-position">Мастер</p>
         </div>
       </div>
 
       <!-- 7 -->
-      <div class="team-card" data-aos data-loc="bereке">
+      <div class="team-card" data-aos data-loc="miras">
         <div class="team-photo-wrap">
           <img src="images/people/zharaskhan.jpeg" alt="Сундет Жарасхан" loading="lazy"
                onerror="this.src='https://ui-avatars.com/api/?name=Сундет+Жарасхан&size=400&background=fee2e2&color=dc2626&bold=true&font-size=0.35'"/>
@@ -768,7 +761,7 @@
         </div>
         <div class="team-body">
           <h4>Сундет Жарасхан</h4>
-          <span class="team-role" style="background:#fee2e2;color:#dc2626;">ПЗМ (мкр Береке)</span>
+          <span class="team-role" style="background:#fee2e2;color:#dc2626;">Автоаптека Мирас</span>
           <p class="team-position">Старший мастер</p>
         </div>
       </div>
@@ -782,7 +775,7 @@
         </div>
         <div class="team-body">
           <h4>Отегалиев Алишер</h4>
-          <span class="team-role">Құрсай ПЗМ</span>
+          <span class="team-role">Автоаптека Курсай</span>
           <p class="team-position">Мастер</p>
         </div>
       </div> -->
@@ -796,7 +789,7 @@
         </div>
         <div class="team-body">
           <h4>Болатулы Нурбек</h4>
-          <span class="team-role">Құрсай ПЗМ</span>
+          <span class="team-role">Автоаптека Курсай</span>
           <p class="team-position">Мастер</p>
         </div>
       </div> -->
@@ -810,7 +803,7 @@
         </div>
         <div class="team-body">
           <h4>Хамиев Нургиса</h4>
-          <span class="team-role">Құрсай ПЗМ</span>
+          <span class="team-role">Автоаптека Курсай</span>
           <p class="team-position">Мастер</p>
         </div>
       </div>
@@ -866,7 +859,7 @@
         </div>
         <div class="team-body">
           <h4>Куанышулы Расул</h4>
-          <span class="team-role" style="background:#fee2e2;color:#dc2626;">Құрсай</span>
+          <span class="team-role" style="background:#fee2e2;color:#dc2626;">Автоаптека Курсай</span>
           <p class="team-position">Старший менеджер</p>
         </div>
       </div>
@@ -894,7 +887,7 @@
         </div>
         <div class="team-body">
           <h4>Иманов Талант</h4>
-          <span class="team-role">Геолог</span>
+          <span class="team-role">Автоаптека Геолог</span>
           <p class="team-position">Менеджер</p>
         </div>
       </div>
@@ -922,7 +915,7 @@
         </div>
         <div class="team-body">
           <h4>Аманжан Адилхан</h4>
-          <span class="team-role">Геолог</span>
+          <span class="team-role">Автоаптека Геолог</span>
           <p class="team-position">Менеджер</p>
         </div>
       </div> -->
@@ -936,7 +929,7 @@
         </div>
         <div class="team-body">
           <h4>Жусипов Данабек</h4>
-          <span class="team-role">Геолог</span>
+          <span class="team-role">Автоаптека Геолог</span>
           <p class="team-position">Менеджер</p>
         </div>
       </div> -->
@@ -950,77 +943,56 @@
   <div class="container">
     <div class="section-header">
       <span class="section-tag">Адреса</span>
-      <h2 class="section-title">Три точки в Атырау</h2>
-      <p class="section-sub">Выберите ближайший к вам сервисный центр</p>
+      <h2 class="section-title">Пять филиалов в Атырау</h2>
+      <p class="section-sub">Два автосервиса и три автоаптеки — выберите ближайший к вам филиал</p>
     </div>
   </div>
 
   <div class="map-wrapper">
-    <!-- Interactive 2GIS embed -->
     <div class="map-iframe-wrap">
-      <!-- Google Maps — Atyrau city centre, zoom 13 -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46071.12345678!2d51.8668!3d47.1164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41aa7a0000000001%3A0x1!2z0JDRgtGL0YDQsNGD!5e0!3m2!1sru!2skz!4v1700000000000!5m2!1sru!2skz"
-        width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Auto Plus Atyrau — карта">
-      </iframe>
+      <div id="map-branches" style="width:100%;"></div>
     </div>
 
     <!-- Points sidebar -->
     <div class="map-points">
       <div class="map-point" data-aos>
-        <div class="mp-num" style="background:var(--blue);">01</div>
+        <div class="mp-num" style="background:#059669;">01</div>
         <div class="mp-info">
-          <h4>Геолог</h4>
-          <p>ул. Астана, 30а (р-н Мирас)</p>
-          <div class="mp-tags">
-            <span class="tag-chip">Магазин</span>
-            <span class="tag-chip">Сервис</span>
-          </div>
+          <h4>Станция Технического Обслуживания N1</h4>
+          <p>Трасса Атырау–Доссор, 15</p>
+          <span class="mp-hours"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–20:00</span>
+          
           <div class="mp-phones">
-            <a href="https://wa.me/77055007558" target="_blank">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              +7 705 500-75-58 (Магазин)
-            </a>
             <a href="https://wa.me/77011189228" target="_blank">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              +7 701 118-92-28 (Сервис)
+              +7 701 118-92-28
             </a>
           </div>
         </div>
       </div>
 
       <div class="map-point" data-aos>
-        <div class="mp-num" style="background:var(--red);">02</div>
+        <div class="mp-num" style="background:#7c3aed;">02</div>
         <div class="mp-info">
-          <h4>Құрсай</h4>
-          <p>ул. Смагулова, 2 (р-н Құрсай)</p>
-          <div class="mp-tags">
-            <span class="tag-chip">Магазин</span>
-            <span class="tag-chip">Сервис</span>
-          </div>
+          <h4>Станция Технического Обслуживания N2</h4>
+          <p>ул. Орынгали Смагулов, 5</p>
+          <span class="mp-hours"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–21:00</span>
+          
           <div class="mp-phones">
-            <a href="https://wa.me/77785862484" target="_blank">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              +7 778 586-24-84 (Магазин)
-            </a>
             <a href="https://wa.me/77754526732" target="_blank">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              +7 775 452-67-32 (Сервис)
+              +7 775 452-67-32
             </a>
           </div>
         </div>
       </div>
 
       <div class="map-point" data-aos>
-        <div class="mp-num" style="background:#059669;">03</div>
+        <div class="mp-num" style="background:var(--blue);">03</div>
         <div class="mp-info">
-          <h4>Трасса Доссор</h4>
-          <p>Трасса Атырау–Доссор, 15 км</p>
-          <div class="mp-tags">
-            <span class="tag-chip">Сервис</span>
-          </div>
+          <h4>Автоаптека N1 (Геолог)</h4>
+          <p>Трасса Атырау–Доссор, 41Б</p>
+          <span class="mp-hours"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–21:00</span>
           <div class="mp-phones">
             <a href="https://wa.me/77055007558" target="_blank">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
@@ -1030,8 +1002,40 @@
         </div>
       </div>
 
+      <div class="map-point" data-aos>
+        <div class="mp-num" style="background:var(--red);">04</div>
+        <div class="mp-info">
+          <h4>Автоаптека N2 (Мирас)</h4>
+          <p>ул. Астана, 30а</p>
+          <span class="mp-hours"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–24:00</span>
+          
+          <div class="mp-phones">
+            <a href="https://wa.me/77055007558" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 705 500-75-58
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-point" data-aos>
+        <div class="mp-num" style="background:#d97706;">05</div>
+        <div class="mp-info">
+          <h4>Автоаптека N3 (Курсай)</h4>
+          <p>ул. Орынгали Смагулова, 2</p>
+          <span class="mp-hours"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Ежедневно 09:00–24:00</span>
+          
+          <div class="mp-phones">
+            <a href="https://wa.me/77785862484" target="_blank">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#25d366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.847L.057 23.882l6.197-1.447A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.891 0-3.659-.498-5.193-1.37l-.373-.22-3.679.859.903-3.583-.244-.388A9.951 9.951 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              +7 778 586-24-84
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div class="map-sidebar-btns">
-        <a href="https://maps.google.com/?q=Атырау+Auto+Plus" target="_blank" class="btn btn-outline map-2gis-btn">
+        <a href="https://maps.google.com/?q=Auto+Plus+Atyrau" target="_blank" class="btn btn-outline map-2gis-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
           Google Maps
         </a>
@@ -1075,7 +1079,7 @@
           <div><span class="logo-main">AUTO PLUS</span><span class="logo-sub" style="color:rgba(255,255,255,0.35)">ATYRAU</span></div>
         </div>
       </div>
-      <p>Профессиональный автосервис<br/>и магазин автозапчастей в Атырау</p>
+      <p>Профессиональный автосервис<br/>и магазин автоаксессуаров в Атырау</p>
     </div>
     <div class="footer-links">
       <h4>Навигация</h4>
@@ -1086,10 +1090,11 @@
     </div>
     <div class="footer-contacts">
       <h4>Контакты</h4>
-      <a href="https://wa.me/77055007558" target="_blank">Магазин Геолог</a>
-      <a href="https://wa.me/77785862484" target="_blank">Магазин Ирсай</a>
-      <a href="https://wa.me/77011189228" target="_blank">Сервис Геолог</a>
-      <a href="https://wa.me/77754526732" target="_blank">Сервис Құрсай</a>
+      <a href="https://wa.me/77011189228" target="_blank">СТО N1 (Трасса, 15)</a>
+      <a href="https://wa.me/77754526732" target="_blank">СТО N2 (Смагулов, 5)</a>
+      <a href="https://wa.me/77055007558" target="_blank">Автоаптека N1 (Геолог)</a>
+      <a href="https://wa.me/77055007558" target="_blank">Автоаптека N2 (Мирас)</a>
+      <a href="https://wa.me/77785862484" target="_blank">Автоаптека N3 (Курсай)</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -1104,5 +1109,80 @@
 </a>
 
 <script src="main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(function () {
+  if (!document.getElementById('map-branches')) return;
+  var map = L.map('map-branches', { zoomControl: false });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+  L.control.zoom({ position: 'topright' }).addTo(map);
+
+  /* ── Координаты филиалов ─────────────────────────────────────────
+     Трассовые адреса (1 и 3) — приблизительные (линейная интерполяция
+     по маршруту Атырау–Доссор). Уточните при необходимости.
+  ─────────────────────────────────────────────────────────────────── */
+  var branches = [
+    { lat: 47.142087, lng: 51.944723, num: '01', name: 'СТО N1',                  addr: 'Трасса Атырау–Доссор, 15',   type: 'СТО',     color: '#059669', wa: 'https://wa.me/77011189228', phone: '+7 701 118-92-28' },
+    { lat: 47.060712, lng: 51.879091, num: '02', name: 'СТО N2',                  addr: 'ул. Орынгали Смагулов, 5',   type: 'СТО',     color: '#7c3aed', wa: 'https://wa.me/77754526732', phone: '+7 775 452-67-32' },
+    { lat: 47.144751, lng: 51.96251,  num: '03', name: 'Автоаптека N1 (Геолог)',  addr: 'Трасса Атырау–Доссор, 41Б',  type: 'Магазин', color: '#2563eb', wa: 'https://wa.me/77055007558', phone: '+7 705 500-75-58' },
+    { lat: 47.15095,  lng: 51.972498, num: '04', name: 'Автоаптека N2 (Мирас)',   addr: 'ул. Астана, 30а',             type: 'Магазин', color: '#dc2626', wa: 'https://wa.me/77055007558', phone: '+7 705 500-75-58' },
+    { lat: 47.061257, lng: 51.878662, num: '05', name: 'Автоаптека N3 (Курсай)',  addr: 'ул. Орынгали Смагулова, 2',  type: 'Магазин', color: '#d97706', wa: 'https://wa.me/77785862484', phone: '+7 778 586-24-84' }
+  ];
+
+  var markers = [];
+  branches.forEach(function (b) {
+    var icon = L.divIcon({
+      html: '<svg xmlns="http://www.w3.org/2000/svg" width="30" height="42" viewBox="0 0 30 42" style="filter:drop-shadow(0 4px 10px rgba(220,38,38,0.4))">' +
+            '<path d="M15 0C6.716 0 0 6.716 0 15C0 26.046 15 42 15 42C15 42 30 26.046 30 15C30 6.716 23.284 0 15 0Z" fill="#dc2626"/>' +
+            '<circle cx="15" cy="15" r="6.5" fill="white"/>' +
+            '<circle cx="15" cy="15" r="3.5" fill="#dc2626"/>' +
+            '</svg>',
+      className: '',
+      iconSize: [30, 42],
+      iconAnchor: [15, 42],
+      popupAnchor: [0, -44]
+    });
+    var m = L.marker([b.lat, b.lng], { icon: icon })
+      .bindPopup(
+        '<div style="font-family:\'DM Sans\',sans-serif;min-width:200px;padding:4px 2px;">' +
+        '<strong style="font-size:13px;font-weight:700;display:block;margin-bottom:4px;color:#0b1526;letter-spacing:-0.01em;">' + b.name + '</strong>' +
+        '<span style="color:#5a6b82;font-size:11.5px;display:block;margin-bottom:8px;">' + b.addr + '</span>' +
+        '<span style="display:inline-block;background:' + b.color + '18;color:' + b.color + ';font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:8px;letter-spacing:0.04em;text-transform:uppercase;">' + b.type + '</span><br>' +
+        '<a href="' + b.wa + '" target="_blank" style="display:inline-flex;align-items:center;gap:5px;color:#fff;background:#22c55e;font-weight:600;font-size:11.5px;padding:5px 12px;border-radius:7px;text-decoration:none;">' + b.phone + '</a>' +
+        '</div>',
+        { maxWidth: 240 }
+      )
+      .addTo(map);
+    markers.push(m);
+  });
+
+  map.fitBounds(L.featureGroup(markers).getBounds(), { padding: [60, 80, 80, 60] });
+
+  // Legend — bottom-right Leaflet control
+  var legend = L.control({ position: 'bottomright' });
+  legend.onAdd = function() {
+    var d = L.DomUtil.create('div');
+    d.style.cssText = 'background:white;padding:10px 14px;border-radius:10px;box-shadow:0 4px 20px rgba(11,21,38,0.14);font-family:\'DM Sans\',sans-serif;pointer-events:none;border:1px solid #dde3ed;margin:0 12px 12px 0;';
+    d.innerHTML =
+      '<div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.18em;color:#5a6b82;margin-bottom:8px;">Тип объекта</div>' +
+      '<div style="display:flex;align-items:center;gap:5px;margin-bottom:5px;">' +
+        '<span style="width:9px;height:9px;border-radius:50%;background:#059669;flex-shrink:0;display:inline-block;"></span>' +
+        '<span style="width:9px;height:9px;border-radius:50%;background:#7c3aed;flex-shrink:0;display:inline-block;"></span>' +
+        '<span style="font-size:11px;color:#0b1526;font-weight:500;margin-left:3px;">СТО — Автосервис</span>' +
+      '</div>' +
+      '<div style="display:flex;align-items:center;gap:5px;">' +
+        '<span style="width:9px;height:9px;border-radius:50%;background:#2563eb;flex-shrink:0;display:inline-block;"></span>' +
+        '<span style="width:9px;height:9px;border-radius:50%;background:#dc2626;flex-shrink:0;display:inline-block;"></span>' +
+        '<span style="width:9px;height:9px;border-radius:50%;background:#d97706;flex-shrink:0;display:inline-block;"></span>' +
+        '<span style="font-size:11px;color:#0b1526;font-weight:500;margin-left:3px;">Автоаптека — Магазин</span>' +
+      '</div>';
+    return d;
+  };
+  legend.addTo(map);
+})();
+</script>
 </body>
 </html>
