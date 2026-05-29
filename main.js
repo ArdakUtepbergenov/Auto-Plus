@@ -12,9 +12,18 @@ const modalBtns = document.querySelectorAll('.services-open-btn');
 function applyTeamFilter(filter) {
   cards.forEach(card => {
     const loc = card.dataset.loc;
-    card.classList.toggle('hidden', filter !== 'all' && loc !== filter);
+    // data-loc="all" cards (founder, маркетолог) always visible
+    card.classList.toggle('hidden', filter !== 'all' && loc !== filter && loc !== 'all');
   });
 
+  // Branch-specific count (excludes founder card and "all" cards)
+  const branchCount = [...cards].filter(c =>
+    !c.classList.contains('hidden') &&
+    !c.classList.contains('team-card-founder') &&
+    c.dataset.loc !== 'all'
+  ).length;
+
+  // Layout count (all visible non-founder cards, including "all" cards like Болатбек)
   const visibleCount = [...cards].filter(c =>
     !c.classList.contains('hidden') &&
     !c.classList.contains('team-card-founder')
@@ -27,7 +36,7 @@ function applyTeamFilter(filter) {
   }
 
   if (teamEmpty) {
-    teamEmpty.style.display = visibleCount === 0 ? 'flex' : 'none';
+    teamEmpty.style.display = branchCount === 0 ? 'flex' : 'none';
   }
 }
 
